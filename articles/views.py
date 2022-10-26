@@ -6,7 +6,7 @@ from articles.serializers import ArticleSerializer
 
 
 @api_view(['GET', 'POST'])
-def articleAPI(request):
+def index(request):
     if request.method == 'GET':
         articles = Article.objects.all()
         serializer = ArticleSerializer(articles, many=True)

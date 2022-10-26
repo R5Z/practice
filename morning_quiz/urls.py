@@ -5,5 +5,5 @@ from drf_yasg import openapi
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("articles/", include("articles.urls")),
+    path("api/articles/", include("articles.urls")),
 ]
